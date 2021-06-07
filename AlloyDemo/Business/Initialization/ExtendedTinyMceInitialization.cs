@@ -37,6 +37,13 @@ namespace AlloyDemo.Business.Initialization
                     .AddEpiserverSupport()
                     .DisableMenubar()
                     .Toolbar("bold italic underline strikethrough");
+
+                // Add the advanced list styles, table,and code plugins and append buttons
+                // // for inserting and editing tables and showing source code to the toolbar
+                config.Default()
+                    .AddPlugin("advlist")
+                    .AddPlugin("table").AppendToolbar("table")
+                    .AddPlugin("code").AppendToolbar("code");
             });
         }
     }
