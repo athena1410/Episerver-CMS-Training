@@ -1,5 +1,6 @@
 using System;
 using System.Web;
+using AlloyDemo.Features.RegisterPersonas;
 using EPiServer.Cms.UI.AspNetIdentity;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -19,7 +20,7 @@ namespace AlloyDemo
 
             // Add CMS integration for ASP.NET Identity
             app.AddCmsAspNetIdentity<ApplicationUser>();
-
+            // app.UseRegisterPersonas(() => HttpContext.Current.Request.IsLocal);
             // Remove to block registration of administrators
             app.UseAdministratorRegistrationPage(() => HttpContext.Current.Request.IsLocal);
 
