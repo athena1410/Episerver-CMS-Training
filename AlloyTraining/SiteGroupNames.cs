@@ -4,6 +4,6 @@
     {
         public const string SPECIALIZED = "Specialized";
         public const string COMMON = "Common";
-        public const string NEWS = "News";
+        public const string NEWS = "News"; 
     }
 }
