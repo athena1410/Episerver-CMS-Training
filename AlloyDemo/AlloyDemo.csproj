@@ -145,6 +145,9 @@
     <Reference Include="EPiServer.Labs.BlockEnhancements, Version=0.10.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\packages\EPiServer.Labs.BlockEnhancements.0.10.0\lib\net45\EPiServer.Labs.BlockEnhancements.dll</HintPath>
     </Reference>
+    <Reference Include="EPiServer.Labs.LanguageManager, Version=4.0.2.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPiServer.Labs.LanguageManager.4.0.2\lib\EPiServer.Labs.LanguageManager.dll</HintPath>
+    </Reference>
     <Reference Include="EPiServer.Licensing, Version=11.20.3.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\packages\EPiServer.Framework.11.20.3\lib\net461\EPiServer.Licensing.dll</HintPath>
     </Reference>
@@ -511,11 +514,14 @@
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\ElementBlocks\DateTimeRangeElementBlock.ascx" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\ElementBlocks\RecaptchaElementBlock.ascx" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\Shared\EditorTemplates\FormModel.ascx" />
+    <Content Include="Resources\LanguageFiles\ContentTypeNames-sv.xml" />
     <Content Include="Resources\LanguageFiles\ContentTypeNames.xml" />
     <Content Include="Resources\LanguageFiles\Display.xml" />
     <Content Include="Resources\LanguageFiles\EditorHints.xml" />
     <Content Include="Resources\LanguageFiles\FindViews.xml" />
+    <Content Include="Resources\LanguageFiles\GroupNames-sv.xml" />
     <Content Include="Resources\LanguageFiles\GroupNames.xml" />
+    <Content Include="Resources\LanguageFiles\PropertyNames-sv.xml" />
     <Content Include="Resources\LanguageFiles\PropertyNames.xml" />
     <Content Include="Resources\LanguageFiles\Views.xml" />
     <Content Include="Resources\LanguageFiles\_ReadMe.txt" />
@@ -607,6 +613,9 @@
     <Content Include="modules\_protected\EPiServer.Forms.Samples\3.7.0\ClientResources\ViewMode\EPiServerFormsSamples.less" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\3.7.0\ClientResources\epi-formssamples\themes\sleek\images\contenttypes\README.md" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\3.7.0\ClientResources\epi-formssamples\themes\sleek\FormsSamples.less" />
+    <Content Include="modules\_protected\EPiServer.Labs.LanguageManager\module.config" />
+    <Content Include="modules\_protected\EPiServer.Labs.LanguageManager\EPiServer.LanguageManager.config" />
+    <Content Include="modules\_protected\EPiServer.Labs.LanguageManager\EPiServer.Labs.LanguageManager.zip" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\FindTemplateHint.cshtml" />
     <Content Include="Views\GDPRapiDemoPage\_TrackSanitizerPatternsOverview.cshtml" />
