@@ -6,7 +6,7 @@ using EPiServer.Web;
 
 namespace AlloyTraining.Models.Pages
 {
-    public class SitePageData
+    public class SitePageData : PageData
     {
         [CultureSpecific]
         [Display(Name = "Meta title",
