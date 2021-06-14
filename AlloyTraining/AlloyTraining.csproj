@@ -251,22 +251,40 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Media\AnyFile.cs" />
+    <Compile Include="Models\Media\ImageFile.cs" />
+    <Compile Include="Models\Media\PdfFile.cs" />
+    <Compile Include="Models\Media\SvgFile.cs" />
+    <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
+    <Compile Include="Models\ViewModels\IPageViewModel.cs" />
+    <Compile Include="Models\ViewModels\PageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SiteGroupNames.cs" />
+    <Compile Include="SiteTabNames.cs" />
     <Compile Include="Views\CustomViewEngine\EpiserverViewEngine.cs" />
     <Compile Include="Views\CustomViewEngine\ViewEngineInitializationModule .cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\blobs\" />
     <Folder Include="Models\Blocks\" />
-    <Folder Include="Models\Media\" />
     <Folder Include="Models\Properties\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\EPiServerDB_df7f6031.mdf" />
+    <Content Include="App_Data\EPiServerDB_df7f6031_log.ldf">
+      <DependentUpon>EPiServerDB_df7f6031.mdf</DependentUpon>
+    </Content>
     <Content Include="IndexingService\IndexingService.svc" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Resources\LanguageFiles\ContentTypes.xml" />
+    <Content Include="Static\contenticons\epi-edu-icon-block.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon-commerce.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon-container.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon-page.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon-search.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon-start.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon.jpg" />
     <Content Include="Static\css\bootstrap-collapse.js" />
     <Content Include="Static\css\bootstrap-responsive.css" />
     <Content Include="Static\css\bootstrap.css" />
@@ -303,6 +321,16 @@
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
+    <Content Include="App_Data\EPiServerErrors.log" />
+    <Content Include="App_Data\Index\Main\segments.gen" />
+    <Content Include="App_Data\Index\Main\segments_6" />
+    <Content Include="App_Data\Index\Main\_0.cfs" />
+    <Content Include="App_Data\Index\Main\_1.cfs" />
+    <Content Include="App_Data\Index\Main\_2.cfs" />
+    <Content Include="App_Data\Index\Main\_3.cfs" />
+    <Content Include="App_Data\Index\Main\_4.cfs" />
+    <Content Include="App_Data\Index\Ref\segments.gen" />
+    <Content Include="App_Data\Index\Ref\segments_1" />
     <None Include="EPiServerLog.config" />
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\web.config" />
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
@@ -318,6 +346,7 @@
     <Content Include="modules\_protected\CMS\CMS.zip" />
     <None Include="packages.config" />
     <Content Include="Views\Pages\StartPage\Index.cshtml" />
+    <Content Include="Views\Shared\PdfFile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
