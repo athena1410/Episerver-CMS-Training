@@ -10,7 +10,7 @@ namespace AlloyTraining.Models.Pages
         GroupName = SiteGroupNames.SPECIALIZED, Order = 10,
         Description = "The home page for a website with an area for blocks and partial pages.")]
     [SiteStartIcon]
-    public class StartPage : PageData
+    public class StartPage : SitePageData
     {
         [CultureSpecific]
         [Display(

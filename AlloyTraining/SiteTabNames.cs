@@ -13,6 +13,6 @@ namespace AlloyTraining
 
         [Display(Order = 20)]
         [RequiredAccess(AccessLevel.Administer)]
-        public const string SITE_SETTINGS = "SiteSettings";
+        public const string SITE_SETTINGS = "Site Settings";
     }
 }
