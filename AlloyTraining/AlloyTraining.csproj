@@ -249,7 +249,10 @@
     <Compile Include="Business\ExtensionMethods\SectionExtensionMethods.cs" />
     <Compile Include="Business\Initialization\RegisterAdminInitializationModule.cs" />
     <Compile Include="Business\Initialization\RegisterDependencyResolverInitializationModule.cs" />
+    <Compile Include="Business\SelectionFactories\ThemeSelectionFactory.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
+    <Compile Include="Controllers\ProductPageController.cs" />
+    <Compile Include="Controllers\StandardPageController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -258,7 +261,9 @@
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\PdfFile.cs" />
     <Compile Include="Models\Media\SvgFile.cs" />
+    <Compile Include="Models\Pages\ProductPage.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
+    <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\ViewModels\IPageViewModel.cs" />
     <Compile Include="Models\ViewModels\PageViewModel.cs" />
@@ -279,7 +284,10 @@
     <Content Include="App_Data\EPiServerDB_df7f6031_log.ldf">
       <DependentUpon>EPiServerDB_df7f6031.mdf</DependentUpon>
     </Content>
+    <Content Include="ClientResources\Styles\help-text-icon.css" />
+    <Content Include="ClientResources\Styles\widen-editors.css" />
     <Content Include="IndexingService\IndexingService.svc" />
+    <Content Include="module.config.xml" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Resources\LanguageFiles\ContentTypes.xml" />
     <Content Include="Static\contenticons\epi-edu-icon-block.jpg" />
@@ -353,6 +361,11 @@
     <Content Include="Views\Shared\PdfFile.cshtml" />
     <Content Include="Views\Shared\Layouts\_Master.cshtml" />
     <Content Include="Views\_ViewStar.cshtml" />
+    <Content Include="Views\Shared\Layouts\_LeftNavigation.cshtml" />
+    <Content Include="Views\Pages\StandardPage\Index.cshtml" />
+    <Content Include="Views\Shared\Layouts\_RightRelatedContent.cshtml" />
+    <Content Include="Views\Pages\ProductPage\Index.cshtml" />
+    <Content Include="Views\Shared\_NavigationMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

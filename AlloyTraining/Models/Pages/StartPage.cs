@@ -10,6 +10,7 @@ namespace AlloyTraining.Models.Pages
         GroupName = SiteGroupNames.SPECIALIZED, Order = 10,
         Description = "The home page for a website with an area for blocks and partial pages.")]
     [SiteStartIcon]
+    [AvailableContentTypes(Include = new[] { typeof(StandardPage) })]
     public class StartPage : SitePageData
     {
         [CultureSpecific]
@@ -27,7 +28,7 @@ namespace AlloyTraining.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 20)]
         public virtual XhtmlString MainBody { get; set; }
-        
+
         [CultureSpecific]
         [Display(
             Name = "Main content area",
